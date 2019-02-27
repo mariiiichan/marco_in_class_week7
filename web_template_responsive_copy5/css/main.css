@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden
+{
+	display: none;
+}
+
+/* this rule is going to allow images to scale smaller and larger
+ but no lonnger than the actual image dimensions*/
+
+img, embed, object, video
+{
+	max-width: 100%;
+}
+
+#container
+{
+	max-width: 1200px; /*it's gonna stop at this size, less than this is safe*/
+	margin: 0 auto;
+}
+
+/* the boxes are automatically stacked*/
+#box1
+{
+	background-color: red;
+	height: 300px; 
+}
+
+#box2 
+{
+	background-color: blue;
+	height: 300px;
+}
+
+@media screen and (min-width: 340px) {
+
+	#columnCon
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#box1
+	{
+		width: 70%
+	}
+
+	#box2
+	{
+		width: 30%;
+	}
+}
