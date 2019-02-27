@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.hidden
+{
+	display: none;
+}
+
+#container
+{
+	width: 95%; /*just a percent that marco prefers */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+#box1 
+{
+	background-color: red;
+	width: 70%;
+	height: 300px;
+}
+
+#box2
+{
+	background-color: blue;
+	width: 30%;
+	height: 300px;
+}
+
+
+@media screen and (max-width: 400px) {
+
+	#box1 
+	{
+		background-color: blue;
+		width: 50%;
+	}
+
+	#box2
+	{
+		background-color: pink;
+		width: 50%;
+	}
+
+}
