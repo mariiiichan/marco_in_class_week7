@@ -1,1 +1,1 @@
-# marco_in_class_week7
+made a lot of working folders using media query with photos he posted
